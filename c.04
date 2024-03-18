@@ -34,7 +34,7 @@ int main() {
    printf("Segunda nota: %f \n", notaDois);
    printf("Terceira nota: %f \n", notaTres);
    printf("Quarta nota: %f \n", notaQuatro);
-   printf("Média: %f \n", media)
+   printf("MÃ©dia: %f \n", media)
    
    getchar();
    
