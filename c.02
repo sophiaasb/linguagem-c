@@ -1,13 +1,13 @@
 #include <stdio.h>
 
 int main() {
-	// DeclaraÁ„o vari·veis.
+	// Declara√ß√£o vari√°veis.
 	char nome[200]; // Cadeia
 	char sexo; // Caracter
 	int idade; // Inteiro
 	float peso; // Real
 	
-	// Solicitando dados para o usu·rio.
+	// Solicitando dados para o usu√°rio.
 	printf("Digite seu nome: ");
 	scanf("%s",&nome);
 	
