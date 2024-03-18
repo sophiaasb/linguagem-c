@@ -30,12 +30,12 @@ int main() {
 	
 	// Exibindo resultados.
 	printf("\n=== Exibindo resultados ===\n");
-	printf("\nPrimeiro numero: %f", primeiroNumero);
-    printf("\nSegundo numero: %f", segundoNumero);
-    printf("\nSoma: %f", soma);
-    printf("\nSubtracao: %f", subtracao);
-    printf("\nMultiplicacao: %f", multiplicacao);
-    printf("\nDivisao: %f", divisao);
+	printf("\nPrimeiro numero: %.1f", primeiroNumero);
+    printf("\nSegundo numero: %.1f", segundoNumero);
+    printf("\nSoma: %.1f", soma);
+    printf("\nSubtracao: %.1f", subtracao);
+    printf("\nMultiplicacao: %.1f", multiplicacao);
+    printf("\nDivisao: %.1f", divisao);
     
     getchar();
     
