@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 int main() {
-	char nome
-	int idade
-	float notaUm, notaDois, notaTres, notaQuatro, media
+	char nome[50];
+	int idade;
+	float notaUm, notaDois, notaTres, notaQuatro, media;
 	
 	printf("Digite seu nome: ");
 	scanf("%s", &nome);
@@ -15,7 +15,7 @@ int main() {
     scanf("%f", &notaUm);
    
     printf("Digite a segunda nota: ");
-    scanf("%f", &notaDois;
+    scanf("%f", &notaDois);
     
     printf("Digite a terceira nota: ");
     scanf("%f", &notaTres);
@@ -23,20 +23,21 @@ int main() {
     printf("Digite a quarta nota: ");
     scanf("%f", &notaQuatro);
     
-   media = notaUm + notaDois + notaTres + notaQuatro / 4
+   media = (notaUm + notaDois + notaTres + notaQuatro) / 4.0;
     
    fflush(stdin);
    
-   printf("\n=== Exibindo reusltados ===\n");
-   printf("Nome: %s \n", nome);
-   printf("Idade: %i \n", idade);
-   printf("Primeira nota: %f \n", notaUm);
-   printf("Segunda nota: %f \n", notaDois);
-   printf("Terceira nota: %f \n", notaTres);
-   printf("Quarta nota: %f \n", notaQuatro);
-   printf("Média: %f \n", media)
+   printf("\n=== Exibindo resultados ===\n");
+   printf("\nNome: %s \n", nome);
+   printf("\nIdade: %i \n", idade);
+   printf("\nPrimeira nota: %f \n", notaUm);
+   printf("\nSegunda nota: %f \n", notaDois);
+   printf("\nTerceira nota: %f \n", notaTres);
+   printf("\nQuarta nota: %f \n", notaQuatro);
+   printf("\nMedia: %f \n", media);
    
    getchar();
    
    return 0;
+   
 }
