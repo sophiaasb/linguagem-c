@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-	// Declarando variáveis.
+	// Declarando variÃ¡veis.
 	char nome[200] = "Marta"; // Cadeia
 	char sexo = 'F'; // Caracter
 	int idade = 20; // Inteiro
