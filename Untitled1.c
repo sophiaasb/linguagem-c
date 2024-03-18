@@ -1,0 +1,35 @@
+#include <stdio.h>
+
+int main() {
+	// Declarando variáveis.
+	float primeiroNumero, segundoNumero
+	float soma, subtracao, multiplicacao, divisao
+	
+	// Solicitando dados para o usuário.
+	printf("Digite o primeiro número: ");
+	scanf("%f", &primeiroNumero);
+	
+	printf("Digite o segundo número: ");
+	scanf("%f", &segundoNumero);
+	
+	// Realizar cálculos.
+	soma = primeiroNumero + segundoNumero
+    subtracao = primeiroNumero - segundoNumero
+    multiplicacao = primeiroNumero * segundoNumero
+    divisao = primeiroNumero / segundoNumero
+	
+	fflush(stdin); // Limpa o cache de input.
+	
+	// Exibindo resultados.
+	printf("\n=== Exibindo resultados ===\n)");
+	printf("Primeiro número: %f", primeiroNumero)
+    printf("Segundo número: %f", segundoNumero)
+    printf("Soma: %f", soma)
+    printf("Subtração: %f", subtracao)
+    printf("Multiplicação: %f", multiplicacao)
+    printf("Divisão: %f", divisao)
+    
+    getchar();
+    
+    return 0;
+}
