@@ -1,4 +1,11 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
 int main() {
+	// setlocale(LC_ALL, "portuguese");
+	setlocale(LC_ALL, "");
+	
 	// Declarando variáveis.
 	float primeiroNumero, segundoNumero;
 	float soma, subtracao, multiplicacao, divisao;
@@ -17,6 +24,9 @@ int main() {
     divisao = primeiroNumero / segundoNumero;
 	
 	fflush(stdin); // Limpa o cache de input.
+	system("cls"); // Limpa o terminal no Windows.
+	system("cls"); // Limpa o temrinal no Linux.
+	systen("cls || clear"); // Limpa o terminal no Windows e Linux.
 	
 	// Exibindo resultados.
 	printf("\n=== Exibindo resultados ===\n");
