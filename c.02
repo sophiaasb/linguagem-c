@@ -2,7 +2,7 @@
 
 int main() {
 	// Declaração variáveis.
-	char nome[200]; // Cadeia
+	string nome[200]; // Cadeia
 	char sexo; // Caracter
 	int idade; // Inteiro
 	float peso; // Real
