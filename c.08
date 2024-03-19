@@ -38,8 +38,8 @@ int main() {
 	printf("\nQuarta nota: %.2f \n", notaQuatro);
 	printf("\nMedia: %.2f \n", media);
 
-    if (media >= 7) printf("\nVocê foi aprovado!");
-    if (media < 7) printf("\nVocê foi reprovado!");
+    if (media >= 7) printf("\nVocÃª foi aprovado!");
+    if (media < 7) printf("\nVocÃª foi reprovado!");
 	
 	return 0;
 	
