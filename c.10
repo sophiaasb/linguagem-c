@@ -34,7 +34,7 @@ int main() {
 	printf("Media: %.1f \n\n", media);
 	
 	if (numeroUm == numeroDois) {
-	printf("Os números são iguais.");
+	printf("Os nÃºmeros sÃ£o iguais.");
 	} else { 
 	printf("Maior valor: %i \n", maiorValor);
 	printf("Menor valor: %i \n", menorValor);
