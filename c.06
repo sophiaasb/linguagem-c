@@ -5,12 +5,12 @@
 int main() {
 	setlocale(LC_ALL, ""); 
     
-	float salario, quantidadeSalarios, salarioMinino = 1412.00; 
+	float salario, quantidadeSalarios, salarioMinimo = 1412.00; 
 	
 	printf("Digite o valor do salário: "); 
 	scanf ("%f", &salario); 
 	
-	quantidadeSalarios = salario / salarioMinino; 
+	quantidadeSalarios = salario / salarioMinimo; 
 	
 	system("cls || clear"); // Limpa o terminal no Windows e Linux. 
 	
