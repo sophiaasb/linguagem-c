@@ -5,10 +5,10 @@
 	setlocale(LC_ALL, "Portuguese");
 	float quantidadeMaca, precoMaca, valorTotal;
 	
-	printf("=== PREÇOS ===");
-	printf("\naté 12 maçãs | R$ 1,30 cada");
-    printf("\n12 ou mais maçãs | R$ 1,00 cada");
-    printf("\nDigite a quantidade de maças que deseja comprar: ");
+	printf("=== PREÃ‡OS ===");
+	printf("\natÃ© 12 maÃ§Ã£s | R$ 1,30 cada");
+    printf("\n12 ou mais maÃ§Ã£s | R$ 1,00 cada");
+    printf("\nDigite a quantidade de maÃ§as que deseja comprar: ");
     scanf("%f",&quantidadeMaca);
     
     if (quantidadeMaca <= 12) {
@@ -21,8 +21,8 @@
     
     system("cls || clear"); 
    
-   printf("\nQuantidade de maçãs: %f \n", quantidadeMaca);
-   printf("Preço das maçãs: R$ %f \n", precoMaca);
+   printf("\nQuantidade de maÃ§Ã£s: %f \n", quantidadeMaca);
+   printf("PreÃ§o das maÃ§Ã£s: R$ %f \n", precoMaca);
    printf("Valor total a pagar: R$ %f \n", valorTotal);
    
    return 0;
