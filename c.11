@@ -10,9 +10,9 @@ int main() {
 	scanf("%i",&idade);
 	
 	if (idade >= 18 && idade <= 65) {
-		printf("\nÉ obrigado a votar.");
+		printf("\nÃ‰ obrigado a votar.");
 	} else {
-		printf("\nNão é obrigado a votar.");	
+		printf("\nNÃ£o Ã© obrigado a votar.");	
 	}
 	
 	return 0;
