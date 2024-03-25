@@ -30,10 +30,16 @@ int main() {
 	printf("Váriavel: %f \n", variavel); // %f -> float -> real
 	printf("\nVáriavel: %.2f \n", variavel);
 
-// IF ELSE
+// ELSE IF
 
   if (variavel >= 7) printf("\nFrase.");
   if (variavel < 7) printf("\nFrase.");
+
+  if (variavel >= 18 && variavel <= 65) {
+		printf("\nFrase.");
+  } else {
+		printf("\nFrase.");	
+  }	
 
   if (strcmp(variavelUm, variavelDois) == 0 && strcmp(variavelTres, variavelQuatro) == 0) {
     printf("\nFrase!");
@@ -41,11 +47,11 @@ int main() {
     printf("\nFrase.");
   }
 
-	if (variavel >= 18 && variavel <= 65) {
-		printf("\nFrase.");
-	} else {
-		printf("\nFrase.");	
-	}	
+ if (conceito == 'A' || conceito == 'B' || conceito == 'C') {
+   	strcpy(resultado, "Aprovado.");
+   } else {
+   	strcpy(resultado, "Reprovado.");
+   }
 
   // SWITCH CASE
 
