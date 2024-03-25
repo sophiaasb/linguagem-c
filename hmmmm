@@ -30,6 +30,8 @@ int main() {
 	printf("Váriavel: %f \n", variavel); // %f -> float -> real
 	printf("\nVáriavel: %.2f \n", variavel);
 
+// IF ELSE
+
   if (variavel >= 7) printf("\nFrase.");
   if (variavel < 7) printf("\nFrase.");
 
@@ -44,6 +46,21 @@ int main() {
 	} else {
 		printf("\nFrase.");	
 	}	
+
+  // SWITCH CASE
+
+variavel = toupper(variavel);
+	
+	switch(variavel) {
+		case '1':
+			variavelUm;
+			break;
+		case '2':
+			variavelDois;
+			break;
+		default:
+			printf("Opção inválida!");
+	}
 	
 	getchar();
 	
