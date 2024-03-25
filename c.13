@@ -44,7 +44,7 @@ int main() {
    printf("Nome: %s \n", nome);
    printf("Primeira nota: %.1f \n", primeiraNota);
    printf("Segunda nota: %.1f \n\n", segundaNota);
-   printf("Média: %.1f \n", media);
+   printf("MÃ©dia: %.1f \n", media);
    printf("Conceito: %c \n", conceito);
    printf("Resultado: %s \n", resultado);
    
