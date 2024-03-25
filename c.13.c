@@ -1,0 +1,55 @@
+#include <stdio.h>
+#include <locale.h>
+#include <string.h>
+
+int main() {
+	setlocale(LC_ALL, "");
+	
+	char nome[200], resultado[200];
+	char conceito;
+	float primeiraNota, segundaNota, media;
+	
+	printf("Digite seu nome: ");
+	scanf("%s",&nome);
+	
+	printf("Digite sua primeira nota: ");
+	scanf("%f",&primeiraNota);
+	
+	printf("Digite sua segunda nota: ");
+	scanf("%f",&segundaNota);
+	
+	media = (primeiraNota + segundaNota) / (float) 2;
+	
+	if (media >= 9) {
+		conceito = 'A';
+   } else if (media >= 7.5) {
+   	    conceito = 'B';
+   } else if (media >= 6) {
+   	    conceito = 'C';
+   } else if (media >= 4) {
+   	    conceito = 'D';
+   } else {
+   	    conceito = 'E';
+   }
+   
+   if (conceito == 'A' || conceito == 'B' || conceito == 'C') {
+   	strcpy(resultado, "Aprovado.");
+   } else {
+   	strcpy(resultado, "Reprovado.");
+   }
+   
+   system("cls || clear");
+   
+   printf("\n=== Exibindo resultados ===\n");
+   printf("Nome: %s \n", nome);
+   printf("Primeira nota: %.1f \n", primeiraNota);
+   printf("Segunda nota: %.1f \n\n", segundaNota);
+   printf("Média: %.1f \n", media);
+   printf("Conceito: %c \n", conceito);
+   printf("Resultado: %s \n", resultado);
+   
+   getchar();
+   
+   return 0;
+   
+}
