@@ -24,7 +24,7 @@ int main() {
 			pesoIdeal = (62.1 * altura) - 44.7;
 			break;
 		default:
-			printf("OpÁ„o inv·lida!");
+			printf("Op√ß√£o inv√°lida!");
 	}
 	
 	printf("\n=== Exibindo resultados ===\n");
