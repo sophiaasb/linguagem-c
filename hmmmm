@@ -20,7 +20,7 @@ int main() {
 	fflush(stdin); // Limpa o cache de input.
 	system("cls"); // Limpa o terminal no Windows.
 	system("cls"); // Limpa o temrinal no Linux.
-	systen("cls || clear"); // Limpa o terminal no Windows e Linux.
+	system("cls || clear"); // Limpa o terminal no Windows e Linux.
 
 	// Exibindo resultados.
 	printf("\n=== Exibindo resultados ===\n");
