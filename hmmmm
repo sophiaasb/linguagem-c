@@ -1,0 +1,50 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+#include <string.h>
+#include <ctype.h>
+
+int main() {
+	setlocale(LC_ALL, "portuguese");
+
+	// Declarando variáveis.
+	char // Cadeia
+	char // Caracter
+	int // Inteiro
+	float // Real
+
+  // Solicitando dados para o usuário.
+	printf("Digite variavel: ");
+	scanf("%s",&variavel);
+	
+	fflush(stdin); // Limpa o cache de input.
+	system("cls"); // Limpa o terminal no Windows.
+	system("cls"); // Limpa o temrinal no Linux.
+	systen("cls || clear"); // Limpa o terminal no Windows e Linux.
+
+	// Exibindo resultados.
+	printf("\n=== Exibindo resultados ===\n");
+	printf("Váriavel: %s \n", variavel); // %s -> string -> cadeia
+	printf("Váriavel: %c \n", variavel); // %c -> char -> caracter
+	printf("Váriavel: %i \n", variavel); // %i -> int -> inteiro
+	printf("Váriavel: %f \n", variavel); // %f -> float -> real
+	printf("\nVáriavel: %.2f \n", variavel);
+
+  if (variavel >= 7) printf("\nFrase.");
+  if (variavel < 7) printf("\nFrase.");
+
+  if (strcmp(variavelUm, variavelDois) == 0 && strcmp(variavelTres, variavelQuatro) == 0) {
+    printf("\nFrase!");
+	} else { 
+    printf("\nFrase.");
+  }
+
+	if (variavel >= 18 && variavel <= 65) {
+		printf("\nFrase.");
+	} else {
+		printf("\nFrase.");	
+	}	
+	
+	getchar();
+	
+	return 0;
