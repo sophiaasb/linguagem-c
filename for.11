@@ -19,7 +19,7 @@ int main() {
     
 }
 
-    media = soma / 2;
+    media = soma /--i;
     
     if (media >= 7) {
     strcpy(resultado, "Aprovado.");
