@@ -11,7 +11,7 @@ int main() {
 	
 	for (i = 1; i <= 3; i++) {
         do {	
-		printf("Digite a %iª nota: ", i);
+		printf("Digite a %iÂª nota: ", i);
 		scanf("%f",&nota);
 	} while (nota < 0 || nota > 10);
 	
@@ -24,13 +24,13 @@ int main() {
     if (media >= 7) {
     strcpy(resultado, "Aprovado.");
    } else if (media >= 5) {
-    strcpy(resultado, "Recuperação.");
+    strcpy(resultado, "RecuperaÃ§Ã£o.");
    } else {
     strcpy(resultado, "Reprovado.");
    }
     
     printf("\n === Exibindo resultado === \n");
-    printf("Média: %.1f \n", media);
+    printf("MÃ©dia: %.1f \n", media);
     printf("Resultado: %s \n", resultado);
 
 	return 0;
