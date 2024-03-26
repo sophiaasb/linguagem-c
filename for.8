@@ -1,0 +1,37 @@
+#include <stdio.h>
+#include <locale.h>
+#include <stdlib.h>
+#include <string.h>
+#include <ctype.h>
+
+int main() {
+	setlocale(LC_ALL, "portuguese");
+	char resultado[200];
+	float nota, soma = 0, media;
+	int i;
+	
+	for(i = 1; i <= 3; i++) {
+		printf("Digite a %iª nota: ", i);
+		scanf("%f",&nota);
+		
+		soma += nota;
+		
+	}
+		 
+	media = soma / 3;
+
+    system("cls || clear");
+	
+    if (media >= 7) {
+    strcpy(resultado, "Aprovado.");
+   } else if (media >= 4) {
+    strcpy(resultado, "Recuperação.");
+   } else {
+    strcpy(resultado, "Reprovado.");
+
+	printf("\n=== Exibindo resultados ===\n");
+	printf("Média %.1f \n", media);
+        printf("Resultado: %s \n", resultado):
+	
+	return 0;
+}
