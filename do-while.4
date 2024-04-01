@@ -1,30 +1,31 @@
 #include <stdio.h>
 #include <locale.h>
 
+int main() {
+
 float nota, soma = 0, media;
 int contador = 0;
 char resposta;
 
 do {
-printf("Digite uma nota: ");
-scanf("%f",&nota);
+    printf("Digite uma nota: ");
+    scanf("%f",&nota);
 
-fflush(st)
-public int _cdecl fflush (FILE *_ File)
-printf("Deseja inserir mais ua nota:
-scanf("%c",&resposta);
-resposta = toupper(resposta);
+    fflush(stdin);
 
-soma += nota;
-contador++;
+    printf("Deseja inserir mais uma nota: ");
+    scanf("%c",&resposta);
+    resposta = toupper(resposta);
 
-} while(resposta != 'N');
+    soma += nota;
+    contador++;
 
-media = soma / contador;
+   } while(resposta != 'N');
+   
+   media = soma / contador;
 
-printf("\n === Exibindo resultados === \n");
-printf("Média: %.1f \n", media);
+   printf("\n=== Exibindo resultados ===\n");
+   printf("Média: %.1f \n", media);
 
-return 0;
-
+   return 0;
 }
