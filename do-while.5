@@ -16,10 +16,10 @@ do {
    fflush(stdin);
    
    system("cls || clear");
-   printf("Escolha uma das opções abaixo: \n");
+   printf("Escolha uma das opÃ§Ãµes abaixo: \n");
    printf("S - Inserir mais uma nota \n");
    printf("P - Ver quantidade de notas inseridas: \n");
-   printf("N - Calcular a média artimética: \n");
+   printf("N - Calcular a mÃ©dia artimÃ©tica: \n");
    printf("Resposta: ");
    scanf("%c",&resposta);
    resposta = toupper(resposta);
@@ -39,7 +39,7 @@ do {
    		system("cls || clear");
    		break;
    	default:
-   		printf("Opção inválida! \n");
+   		printf("OpÃ§Ã£o invÃ¡lida! \n");
    		sleep(5);
    		system("cls || clear");
    		
@@ -48,7 +48,7 @@ do {
    media = soma / contador;
    
    printf("\n === Exibindo resultados === \n");
-   printf("Média: %.1f \n", media);
+   printf("MÃ©dia: %.1f \n", media);
    
    return 0;
 }
