@@ -1,0 +1,52 @@
+#include <stdio.h>
+#include <locale.h>
+#include <stdlib.h>
+#include <ctype.h>
+#include <limits.h>
+#include <time.h>
+
+int main() {
+	setlocale(LC_ALL, "portuguese");
+	
+	int opcao, numeroFilhos, numeroFamilias;
+	int maiorSalario = INT_MAX, menorSalario = INT_MIN;
+	float salario, mediaSalario, mediaFilhos;
+	
+	do { 
+	printf("=== MENU === \n");
+	printf("1 - Adicionar família \n");
+	printf("2 - Exibir resultados e sair \n");
+	printf("Digite a opção desejada: ");
+	scanf("%i", &opcao);
+	
+	switch (opcao) {
+		case 1: 
+		printf("Digite o salário: ");
+		scanf("%i", &salario);
+		
+		fflush(stdin);
+		printf("Digite o número de filhos: ");
+		scanf("%i", &numeroFilhos);
+		
+	    case 2:
+	    	break;
+	    default: 
+	    printf("\nOpção inválida! \n");
+	    sleep(4);
+	    system("cls || clear");
+	    
+   } 
+} while (opcao != 2);
+
+mediaSalario = somaSalario; 
+
+printf("=== Exibindo resultados === \n");
+printf("Total de famílias: %.2i \n", numeroFamilias);
+printf("Média salarial: %.2f \n", mediaSalario);
+printf("Média de filhos: %.2i \n", mediaFilhos);
+printf("Maior salário: %f \n", maiorSalario);
+print("Menor salário: %f \n", menorSalario);
+
+return 0;
+
+}
