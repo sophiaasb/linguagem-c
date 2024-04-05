@@ -1,6 +1,9 @@
 #include <stdio.h>
 #include <locale.h>
 #include <stdlib.h>
+#include <ctype.h>
+#include <limits.h>
+#include <time.h>
 
 int main() {
 	setlocale(LC_ALL, "portuguese");
@@ -14,7 +17,7 @@ int main() {
 	printf("=== MENU === \n");
 	printf("1 - Adicionar pessoa \n");
     printf("2 - Exibir resultado e sair \n");
-    printf("Digite a opÁ„o desejada: ");
+    printf("Digite a op√ß√£o desejada: ");
     scanf("%i", &opcao);
 	
 	switch (opcao) {
@@ -26,7 +29,7 @@ int main() {
 	    printf("Digite o sexo - M ou F: ");
 	    scanf("%s", &sexo);
 	
-	    printf("Digite o sal·rio: ");
+	    printf("Digite o sal√°rio: ");
 	    scanf("%f", &salario);
 	
 	    sexo = toupper(sexo);
@@ -50,7 +53,7 @@ int main() {
 	  case 2:
 		  break;
 	  default:
-		 printf("\nOpÁ„o inv·lida \n");
+		 printf("\nOp√ß√£o inv√°lida \n");
 		 sleep(4);
 		 system("cls || clear");
 		
@@ -60,7 +63,7 @@ int main() {
     mediaSalario = somaSalario / contadorSalario;  
    		
     printf("=== Exibindo resultados ===\n");
-    printf("MÈdia salarial do grupo: %.2f \n", mediaSalario);
+    printf("M√©dia salarial do grupo: %.2f \n", mediaSalario);
     printf("Maior idade: %i \n", maiorIdade);
     printf("Menor idade: %i \n", menorIdade);
    		
