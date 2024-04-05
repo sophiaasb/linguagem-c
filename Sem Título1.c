@@ -35,7 +35,7 @@ int main() {
 	    sexo = toupper(sexo);
 	
 	    if (idade > maiorIdade) {
-		    menorIdade = idade;
+		    maiorIdade = idade;
 	    }
 	    
 	    if (idade > menorIdade) {
@@ -66,6 +66,7 @@ int main() {
     printf("Média salarial do grupo: %.2f \n", mediaSalario);
     printf("Maior idade: %i \n", maiorIdade);
     printf("Menor idade: %i \n", menorIdade);
+    printf("Quantidade de mulheres com salário acima de 5 mil: ", mulheres5k);
    		
     return 0;
    
