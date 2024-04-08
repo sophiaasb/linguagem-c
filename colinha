@@ -66,6 +66,23 @@ variavel = toupper(variavel);
 			break;
 		default:
 			printf("Opção inválida!");
+
+    // DO WHILE
+
+do {
+printf ("Frase: ");
+scanf ("%f", &variavel);
+somaVariaveis += variavel;
+contador++;
+
+printf ("Pergunta? (s/n): ");
+scanf ("%s", &resposta);
+} while (strcmp(resposta, "s") == 0 || strcmp (resposta, "s") == 0);
+
+media = somaVariaveis / contador;
+printf ("A Média é: %.2f\n", media);
+return 0;
+}
 	}
 	
 	getchar();
