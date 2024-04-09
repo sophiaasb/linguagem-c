@@ -6,7 +6,7 @@ int main() {
 	int i;
 	
 	printf("Digite as notas: \n");
-	for (i = 0; i < 3; i++) {
+	for (i = 0; i < TAM; i++) {
 		printf("Nota %d: ", i + 1);
 		scanf("%d", &notas[i]);
 	}
