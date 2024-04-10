@@ -7,6 +7,7 @@ int main() {
 	
 	float notas[TAM], soma = 0, media;
 	int i;
+        char resultado;
 	
 	printf("Digite as três notas: \n");
 	for (i = 0; i < TAM; i++) {
@@ -24,10 +25,14 @@ int main() {
 	}
 	
 	printf("\nMédia: %.1f \n", media);
-	
-	if (media >= 7) printf("\nAprovado!");
-    if (media < 7) printf("\nEm recuperação.");
-    if (media < 5) printf("\nReprovado.");
-	
+
+
+  if (media >= 7) {
+  printf("\nAprovado!");
+   } else if (media < 7) {
+  printf("\nEm recuperação.");
+   } else {
+  printf("\nReprovado.");
+
 	return 0;
 }
