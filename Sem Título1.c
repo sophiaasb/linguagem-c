@@ -1,0 +1,35 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+#include <limits.h>
+
+#define TAMANHO 5
+
+int main() {
+	setlocale(LC_ALL, "portuguese");
+	
+	char nomes[TAMANHO][200];
+	int idades[TAMANHO];
+	int i;
+	
+	printf("=== Solicitando dados === \n");
+	for (i = 0; i < TAMANHO; i++) {
+     	printf("Digite o %iº nome: ", i+1);
+	    scanf("%s", &nomes[i]);
+	
+      	printf("Digite a %iº idade: ", i+1);
+    	scanf("%i", &idades[i]);
+    	
+    	printf("\n");
+   }
+	
+	printf("\n=== Exibindo dados === \n");
+	for (i = 0; i < TAMANHO; i++) {
+		printf("%iº nome: %s \n", i+1, nomes[i]);
+		printf("%iª idade: %i \n\n", i+1, idades[i]);
+	}
+
+   return 0;
+
+}
+
