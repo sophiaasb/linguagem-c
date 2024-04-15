@@ -51,6 +51,7 @@ int main() {
    
    for(i = 0; i < MAX; i++) {
    	printf("O valor %iº digitado é: %d \n", i+1, numeros[i]);
+        printf("Números inseridos: %i \n", quantidadeNumeros);
    }
    
 	return 0;
