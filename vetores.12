@@ -10,7 +10,7 @@ int main( ) {
 
     printf("=== Solicitando dados === \n");
     for (i = 0; i < TAMANHO; i++) {
-        printf("Digite o %iº numero: ", i+1);
+        printf("Digite o %iÂº numero: ", i+1);
         scanf("f",&numeros[i]);
 
     if (numeros[i] < 0); {
@@ -20,7 +20,7 @@ int main( ) {
 
     printf("\n=== Exibindo dados === \n");
     for (i = 0; i < TAMANHO; i++) {
-       printf("%iº numero: %.1f \n", i+1, numeros[i]);
+       printf("%iÂº numero: %.1f \n", i+1, numeros[i]);
    }
 
    return 0;
