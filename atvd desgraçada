@@ -1,0 +1,64 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+#include <locale.h>
+#include <limits.h>
+
+#define TAM 5
+
+int main() {
+    setlocale(LC_ALL, "portuguese");
+    int qntdNPares = 0, qntdNImpares = 0;
+    int qntdNPosi = 0, qntdNNega = 0;
+    int numerosTT[i];
+    int maior, menor;
+    float mediaPares, mediaImpares;
+    float mediaTT;
+    int reverso;
+    int i;
+    
+    
+     
+// qntd pares e impares 
+    for ( i = 0; i < TAM; i++){
+    printf("Informe o valor dos 5 números");
+    scanf("%i", &numerosTT[i]);
+    	
+     if (numerosTT[i] % 2 == 0) {
+	 qntdNPares++;
+	 
+	} else if{
+		qntdNImpares++;
+		
+		
+	// qntd positivos e negativos
+	} if (numerosTT[i] < 0){
+		qntdNNega++;
+			
+	} else {
+		qntdNPosi++;
+	}
+		}
+	
+// qnts numeros
+
+
+
+// maior e menor
+	for (i = 1; i < TAM; i++) {
+		if (numerosTT[i] < menor) {
+			menor = numerosTT[i];
+			}
+		if (numerosTT[i]) > maior {
+		    maior = numerosTT[i];
+		}
+	}
+
+
+// media pares
+
+// media impares
+
+// media numeros 
+
+// numeros na ordem inversa
