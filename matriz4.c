@@ -29,7 +29,7 @@ int main() {
 }  
 
     printf("\n=== Exibindo dados === \n");
-    for (i = 0; i < 2; i++) {
+    for (i = 0; i < 4; i++) {
     	printf("%iº aluno: %s \n", i+1, alunos[i]);
     	
     	for (j = 0; j < 3; j++) {
