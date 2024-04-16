@@ -41,11 +41,11 @@ menor = numerosTT[i];
 }
 }
 
-// media pares
+   // media pares
 
-// media impares
+   // media impares
 
-// media numeros 
+   // media numeros 
 
     printf("=== Exibindo resultados ===\n");
     printf("Quantidade de números pares: %d\n", qntdPares);
