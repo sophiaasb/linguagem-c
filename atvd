@@ -32,10 +32,9 @@ int main() {
         }
 
     // Maior e menor número.
-        if (i == 0 || numeros[i] > maior) {
+        if (numeros[i] > maior) {
             maior = numeros[i];
-        }
-        if (i == 0 || numeros[i] < menor) {
+        } else if (numeros[i] < menor) {
             menor = numeros[i];
         }
 
