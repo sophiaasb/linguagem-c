@@ -4,7 +4,7 @@
 int main() {
 	int numeros[2][2];
 	
-	// Declarando vari·veis.
+	// Declarando vari√°veis.
 	numeros[0][0] = 1;
 	numeros[0][1] = 2;
 	numeros[1][0] = 3;
