@@ -33,9 +33,8 @@ int main() {
 }
 	
  // maior e menor
-for (i = 1; i < 5; i++) {
-if (numerosTT[i] < menor) {
-menor = numerosTT[i];
+if (numeros[i] < menor) {
+menor = numeros[i];
 } else if (numeros[i]) > maior {
     maior = numeros[i];
 }
