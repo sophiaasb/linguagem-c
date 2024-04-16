@@ -3,8 +3,6 @@
 #include <locale.h>
 #include <limits.h>
 
-#define TAM 5
-
 int main() {
 	setlocale(LC_ALL, "portuguese");
 	
@@ -12,85 +10,63 @@ int main() {
     int pares = 0, impares = 0;
     int positivos = 0, negativos = 0;
     int maior, menor;
-    float soma = 0, contador = 0;
-    float media, mediaPares = 0, mediaImpares = 0;
+    float mediaTotal = 0, mediaPares = 0, mediaImpares = 0;
 
-    printf("=== Solicitando dados. ===\n");
-
+    // Solicitando números.
     for (i = 0; i < 5; i++) {
-    printf("Digite o %iº número: ", i+1);
-    scanf("%i", &numeros[i]);
+        printf("Digite o %dº número: ", i+1);
+        scanf("%d", &numeros[i]);
 
-	// Quantidade de números pares e ímpares. 
-	
-	 if (numeros[i] % 2 == 0) {
-        pares++;
-    } else {
-        impares++;
-   }
-	
-	// Quantidade de números positivos e negativos.
-       
-      if (numeros[i] < 0) {
-        negativos++;
-    } else if (numeros[i] >= 0) {
-        positivos++;
-     }
-
-	// O maior e o menor número.
-	if (numeros[i] > maior) {
-   maior = numeros[i];
-   } else if (numeros[i] < menor) {
-   menor = numeros[i];
-   }
-	
-	
-   // A média de números pares.
-        if (numero % 2 == 0) {
-            soma += numero;
-            contador++;
+    // Pares e ímpares.
+    if (numeros[i] % 2 == 0) {
+            pares += numeros[i];
+        } else {
+            impares += numeros[i];
         }
-    }
 
-    if (contador > 0) {
-        float media = soma / contador;
-        printf("A média dos números pares é: %.2f \n", media);
-    } else {
-        printf("Nenhum número par foi inserido.\n");
-    }
-   
-   // A média de números ímpares.
-         if (numero % 2 != 0) {
-             soma += numero;
-             contador++;
+    // Positivos e negativos.
+        if (numeros[i] > 0) {
+            positivos++;
+        } else if (numeros[i] < 0) {
+            negativos++;
         }
+
+    // Maior e menor número.
+        if (i == 0 || numeros[i] > maior) {
+            maior = numeros[i];
+        }
+        if (i == 0 || numeros[i] < menor) {
+            menor = numeros[i];
+        }
+
+    // Média dos pares e ímpares.
+        if (numeros[i] % 2 == 0) {
+            mediaPares += numeros[i] / pares;
+        } else {
+            mediaImpares += numeros[i] / impares;
+        }
+        
+
+    // Média total.
+        mediaTotal += numeros[i] / 5;
     }
 
-    if (contador > 0) {
-        media = soma (float) / contador;
-        printf("A média dos números ímpares é: %.2f \n", media);
-    } else {
-        printf("Nenhum número ímpar foi inserido.\n");
+    // Exibindo resultados.
+    printf("=== Exibindo resultados ===\n");
+    printf("Quantidade de números pares: %d\n", pares);
+    printf("Quantidade de números ímpares: %d\n", impares);
+    printf("Quantidade de números positivos: %d\n", positivos);
+    printf("Quantidade de números negativos: %d\n", negativos);
+    printf("Quantidade de números inseridos: %d\n", i);
+    printf("Maior número: %d\n", maior);
+    printf("Menor número: %d\n", menor);
+    printf("Média dos números pares: %.2f\n", mediaPares);
+    printf("Média dos números ímpares: %.2f\n", mediaImpares);
+    printf("Média de números inseridos: %.2f\n", mediaTotal);
+    printf("Números lidos na ordem inversa:\n");
+    for (i = 4; i >= 0; i--) {
+         printf("%d", numeros[i]);
     }
-	// A média de todos os números inseridos.
-    soma += numeros[i];
-    media = soma / (float) TAM;
-    
-	// Mostrar os números lidos na ordem inversa.
-	for (i = 5; i >= 1; i--) {
-		printf("%d \n", i);
-	}
-	
-    printf("\n=== Exibindo dados. ===\n");
-    printf("Quantidade de números pares: %i \n", pares);
-    printf("Quantidade de números ímpares: %i \n", impares);
-    printf("Quantidade de números positivos: %i \n", positivos);
-    printf("Quantidade de números negativos: %i \n", negativos);
-    printf("Maior número: %i \n", maior);
-    printf("Menor número: %i \n", menor);
-    printf("Média de números pares: %i \n", mediaPares);
-    printf("Média de números impares: %i \n", mediaImpares);
-    printf("Média de todos os números inseridos: %.1f \n", media);
-    
+
     return 0;
 }
