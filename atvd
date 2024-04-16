@@ -1,0 +1,102 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+#define TAM 5
+
+int main() {
+    setlocale(LC_ALL, "portuguese");
+
+    int i, numero, numeros[5];
+    int pares = 0, impares = 0;
+    int positivos = 0, negativos = 0;
+    int maior = 0, menor = 0;
+    int soma = 0, contador = 0;
+    float media, mediaPares = 0, mediaImpares = 0, mediaNumeros;
+
+    for (i = 0; i < 5; i++) {
+        printf("Digite o %dº número: ", i+1);
+        scanf("%d", &numero);
+
+        // Quantidade de números pares e ímpares.
+        if (numero % 2 == 0) {
+            pares++;
+        } else {
+            impares++;
+        }
+
+        // Quantidade de números positivos e negativos.
+        if (numero > 0) {
+            positivos++;
+        } else if (numero < 0) {
+            negativos++;
+        }
+
+        // O maior e o menor número.
+        if (i == 0 || numero > maior) {
+            maior = numero;
+        }
+        if (i == 0 || numero < menor) {
+            menor = numero;
+        }
+
+         // A média de números pares.
+        if (numero % 2 == 0) {
+            soma += numero;
+            contador++;
+        }
+    }
+
+    if (contador > 0) {
+        float media = soma / contador;
+        printf("A média dos números pares é: %.2f \n", media);
+    } else {
+        printf("Nenhum número par foi inserido.\n");
+    }
+   
+   // A média de números ímpares.
+         if (numero % 2 != 0) {
+             soma += numero;
+             contador++;
+        }
+    }
+
+    if (contador > 0) {
+        media = soma (float) / contador;
+        printf("A média dos números ímpares é: %.2f \n", media);
+    } else {
+        printf("Nenhum número ímpar foi inserido.\n");
+    }
+   
+   // A média de todos os números inseridos.
+   if (contador > 0) {
+        float media = soma (float) / contador;
+        printf("A média dos números inseridos é: %.2f \n", media);
+    } else {
+        printf("Nenhum número foi inserido.\n");
+    }
+    // A média de todos os números inseridos.
+   if (contador > 0) {
+        float media = soma (float) / contador;
+        printf("A média dos números inseridos é: %.2f \n", media);
+    } else {
+        printf("Nenhum número foi inserido.\n");
+    }
+
+   // Mostrar os números lidos na ordem inversa.
+    for (i = 5; i >= 0; i--) {
+        printf("%d \n", numeros[i]);
+    }
+   
+    printf("Quantidade de números pares: %d \n", pares);
+    printf("Quantidade de números ímpares: %d \n", impares);
+    printf("Quantidade de números positivos: %d \n", positivos);
+    printf("Quantidade de números negativos: %d \n", negativos);
+    printf("Quantidade de números inseridos: %d \n", numeros);
+    printf("O maior número é: %d \n", maior);
+    printf("O menor número é: %d \n", menor);
+    printf("Números na ordem inversa: %d \n");
+    
+    return 0;
+    	
+	}
