@@ -42,6 +42,14 @@ int main() {
 		}
 		
 		printf("Média: %.1f \n", media[i]);
+
+	    if (media[i] >= 7) {
+		printf("Aprovado.");
+	} else if (media[i] >= 5) {
+		printf("Recuperação.");
+	} else {
+		printf("Reprovado."):
+	}
 		
 		printf("\n");
 	}
